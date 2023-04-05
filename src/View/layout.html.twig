@@ -1,0 +1,28 @@
+{# layout.html.twig #}
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Wilders.co{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    {% block stylesheet %}{% endblock %}
+    <link rel="icon" href="/assets/images/favicon.png">
+</head>
+
+<body>
+    {% block nav %}
+        <nav>
+        <ul>
+            <li><a href="products.php">produits</a></li>
+            <li><a href="contact.php">contact</a></li>
+        </ul>
+    {% endblock %}
+    {%block content%}{% endblock %}
+    {% block javascript %}{% endblock %}
+    </nav>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{# activities.html.twig #}
+{% extends 'layout.html.twig' %}
+{% block title %}
+    {{ parent() }} - Liste de nos activités
+{% endblock %}
+{% block content %}
+    {% for activity in activities %}
+        {% include 'component/_card.html.twig' %}
+    {% endfor %}
+{% endblock %}
